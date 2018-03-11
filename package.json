@@ -1,6 +1,6 @@
 {
   "name": "bs-bcrypt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BucklesScript bindings to the bcryptjs library",
   "scripts": {
     "build": "bsb -make-world",
