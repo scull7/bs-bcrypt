@@ -1,5 +1,5 @@
 {
-  "name": "bs-mysql2",
+  "name": "bs-bcrypt",
   "version": "1.0.0",
   "package-specs": {
     "module": "commonjs",
