@@ -6,6 +6,7 @@
     "build": "bsb -make-world",
     "clean": "bsb -clean-world",
     "coverage": "nyc report --temp-directory=coverage --reporter=text-lcov | coveralls",
+    "format": "bsrefmt --in-place",
     "install:peers": "yarn add $(jq -r '.peerDependencies|keys|join(\" \")' package.json)",
     "precommit": "lint-staged",
     "start": "bsb -make-world -w",
@@ -14,7 +15,7 @@
   },
   "lint-staged": {
     "*.{re,rei}": [
-      "refmt --in-place",
+      "yarn format",
       "git add"
     ]
   },
